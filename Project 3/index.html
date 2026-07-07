@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Interactive Hub</div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="themeBtn">🌙 Dark Mode</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Master JavaScript Interactivity</h1>
+
+        <p>
+            Explore powerful DOM manipulation and interactive web elements built
+            using pure JavaScript.
+        </p>
+
+        <div class="hero-btns">
+            <button>Explore Features</button>
+            <button>Get Started</button>
+        </div>
+    </section>
+
+    <!-- Feature Cards -->
+    <section class="features">
+
+        <div class="card">
+            <h3>🌙 Dark Mode Toggle</h3>
+            <p>Switch between dark and light themes.</p>
+        </div>
+
+        <div class="card">
+            <h3>🔢 Counter App</h3>
+            <p>Increase, decrease and reset count.</p>
+        </div>
+
+        <div class="card">
+            <h3>⌨️ Character Counter</h3>
+            <p>Count characters in real time.</p>
+        </div>
+
+        <div class="card">
+            <h3>❓ FAQ Accordion</h3>
+            <p>Interactive expandable questions.</p>
+        </div>
+
+    </section>
+
+    <section class="counter-section">
+        <h2>Counter App</h2>
+        <div class="counter-box">
+            <h1 id="count">0</h1>
+            <div class="counter-buttons">
+                <button onclick="decrease()">-</button>
+                <button onclick="resetCount()">Reset</button>
+                <button onclick="increase()">+</button>
+            </div>
+        </div>
+    </section>
+    <section class="character-section">
+
+        <h2>Live Character Counter</h2>
+
+        <textarea id="textInput" placeholder="Start typing here..."></textarea>
+
+        <p>
+            Characters :
+            <span id="charCount">0</span>
+        </p>
+
+    </section>
+
+    <section class="faq-section">
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What is JavaScript?
+            </button>
+
+            <div class="faq-answer">
+                JavaScript is a programming language used to make websites interactive.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What is DOM?
+            </button>
+
+            <div class="faq-answer">
+                DOM stands for Document Object Model. It allows JavaScript to interact with HTML.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What is Event Listener?
+            </button>
+
+            <div class="faq-answer">
+                Event listeners detect user actions like clicks, typing and scrolling.
+            </div>
+        </div>
+
+    </section>
+
+    <section class="color-section">
+
+        <h2>Random Color Generator</h2>
+
+        <h3 id="colorCode">
+            #0F172A
+        </h3>
+
+        <button id="colorBtn">
+            Generate Color
+        </button>
+
+    </section>
+
+    <section class="clock-section">
+        <h2>Digital Clock</h2>
+        <h1 id="clock">00:00:00</h1>
+    </section>
+
+   <footer class="footer">
+
+    <h3>Interactive Hub</h3>
+
+    <p>Interactive JavaScript Components Project</p>
+
+    <div class="footer-links">
+        <a href="#">Home</a>
+        <a href="#">Features</a>
+        <a href="#">Tools</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 Faizan Chougule. All Rights Reserved.
+    </p>
+
+</footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
